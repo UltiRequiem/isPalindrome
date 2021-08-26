@@ -1,5 +1,5 @@
 import React from "react";
 
-const App = () => {};
+let App = () => {};
 
 export default App;
