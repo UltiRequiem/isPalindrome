@@ -1,11 +1,10 @@
 import React from 'react'
 
-import { Header, HeaderImage } from './styles'
+import { Header as HeaderStyles, HeaderImage, HeaderLinks } from './styles'
 
-const AppHeader = () => (
-  <Header>
-    <HeaderImage src="https://git.io/J3uo4"></HeaderImage>
-  </Header>
+const Header = () => (
+  <HeaderStyles>
+  </HeaderStyles>
 )
 
-export default AppHeader
+export default Header

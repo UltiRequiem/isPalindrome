@@ -1,12 +1,11 @@
 import React from 'react'
 
-import { Header } from '@components'
+import {Header} from '@components'
+
+import Layout from '../pages'
 
 const App = () => (
-  <>
-    <Header />
-    <h1>Hi</h1>
-  </>
+  <Layout />
 )
 
 export default App
