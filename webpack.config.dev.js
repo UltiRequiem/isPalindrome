@@ -17,11 +17,13 @@ module.exports = {
     },
     compress: false,
     port: 3000,
+    historyApiFallback: true,
   },
 
   resolve: {
     alias: {
       '@components': fm('src/components'),
+      '@pages': fm('src/pages'),
       '@containers': fm('src/containers'),
     },
   },

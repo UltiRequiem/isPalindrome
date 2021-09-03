@@ -1,14 +1,4 @@
-import * as React from 'react'
-import Layout from './styles'
+import Main from './Main'
+import NotFound from './NotFound'
 
-import { Header } from '@components'
-
-const Container = () => (
-  <Layout>
-    <Header />
-    <div>Content</div>
-    <footer>Footer</footer>
-  </Layout>
-)
-
-export default Container
+export { Main, NotFound }
