@@ -1,6 +1,5 @@
 const path = require('path')
 
-const Dotenv = require('dotenv-webpack')
 const HtmlPlugin = require('html-webpack-plugin')
 
 /** @param {string} dir */
@@ -24,8 +23,6 @@ module.exports = {
     alias: {
       '@components': fm('src/components'),
       '@containers': fm('src/containers'),
-      '@config': fm('src/config'),
-      '@store': fm('src/store'),
     },
   },
 
@@ -45,14 +42,6 @@ module.exports = {
   },
 
   plugins: [
-    new Dotenv({
-      path: './.env',
-      safe: true,
-      allowEmptyValues: true,
-      systemvars: true,
-      silent: true,
-      defaults: false,
-    }),
     new HtmlPlugin({
       template: './public/index.html',
       filename: './index.html',
